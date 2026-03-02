@@ -1,0 +1,30 @@
+{
+  "name": "plugin-markup-with-composer",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build",
+    "assets:start": "webpack --watch --mode=development --progress --config=assets.config.js",
+    "assets:build": "webpack --mode=production --progress --config=assets.config.js",
+    "block:start": "wp-scripts start --blocks-manifest --webpack-src-dir=blocks/src --output-path=blocks/build",
+    "block:build": "wp-scripts build --blocks-manifest --webpack-src-dir=blocks/src --output-path=blocks/build",
+    "wp-cli-pot": "",
+    "zip": ""
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^31.5.0",
+    "css-loader": "^7.1.4",
+    "css-minimizer-webpack-plugin": "^7.0.4",
+    "mini-css-extract-plugin": "^2.10.0",
+    "postcss-loader": "^8.2.1",
+    "sass": "^1.97.3",
+    "sass-loader": "^16.0.7",
+    "webpack": "^5.105.3",
+    "webpack-cli": "^6.0.1"
+  }
+}

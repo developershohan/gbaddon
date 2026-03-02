@@ -1,0 +1,8 @@
+node_modules
+vendor
+blocks/build
+composer.lock
+composer-lock.json
+assets/css
+assets/js
+assets/admin

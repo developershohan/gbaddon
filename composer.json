@@ -1,0 +1,23 @@
+{
+  "name": "shohan/plugin-addon",
+  "type": "wordpres-plugin",
+  "license": "GPL-2.0-only",
+  "config": {
+    "disable-tls": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Shohan\\PluginAddon\\": "includes/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Shohanur Rahman",
+      "email": "dev.shohanur@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.4"
+  }
+}
