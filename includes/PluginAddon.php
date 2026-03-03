@@ -16,8 +16,8 @@ class PluginAddon
     {
 
         define('PLUGIN_ADDON_VERSION', '1.0.0');
-        define('PLUGIN_ADDON_PATH', plugin_dir_path(__FILE__));
-        define('PLUGIN_ADDON_URL', plugin_dir_url(__FILE__));
+        define('PLUGIN_ADDON_PATH', plugin_dir_path(__DIR__));
+        define('PLUGIN_ADDON_URL', plugin_dir_url(__DIR__));
     }
 
     public function init_plugin()
@@ -27,7 +27,7 @@ class PluginAddon
     }
 
     public function includes(){
-var_dump("asdf");
+        \Shohan\PluginAddon\App\BlockHandler::instance()->init();
     }
     public function init_hooks(){
         load_plugin_textdomain( 'plugin-addon',false, PLUGIN_ADDON_PATH .'i18n/');

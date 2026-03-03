@@ -1,20 +1,27 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "create-block/copyright-date-block",
-	"version": "0.1.0",
-	"title": "Copyright Date Block",
-	"category": "widgets",
-	"description": "Display your site's copyright date.",
-	"example": {},
+	"name": "plugin-markup-with-composer/heading-block",
+	"version": "1.0.0",
+	"title": "Heading Block",
+	"category": "text",
+	"description": "Display your site's heading.",
+	"icon": "heading",
+	"keywords": [
+		"heading",
+		"title",
+		"block"
+	],
 	"attributes": {
-		"fallbackCurrentYear": {
-			"type": "string"
+		"content": {
+			"type": "string",
+			"default": "Heading Text"
 		},
-		"showStartingYear": {
-			"type": "boolean"
+		"level": {
+			"type": "number",
+			"default": 2
 		},
-		"startingYear": {
+		"textAlign": {
 			"type": "string"
 		}
 	},
@@ -26,9 +33,15 @@
 		"html": false,
 		"typography": {
 			"fontSize": true
+		},
+		"align": ["left", "center", "right"],
+		"background": {
+			"color": true,
+			"gradient": false,
+			"image": false
 		}
 	},
-	"textdomain": "copyright-date-block",
+	"textdomain": "plugin-markup-with-composer",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",
