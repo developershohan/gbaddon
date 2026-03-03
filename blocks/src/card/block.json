@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "plugin-markup-with-composer/card",
+	"version": "1.0.0",
+	"title": "card",
+	"category": "text",
+	"description": "Display your site's card.",
+	"icon": "text",
+	"keywords": [
+		"card"
+	],
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Card Title"
+		},
+		"subtitle": {
+			"type": "string",
+			"default": "Heading Text"
+		},
+		"imageUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"textColor": {
+			"type": "string",
+			"default": "#000000"
+		}
+	},
+	"supports": {	},
+	"textdomain": "plugin-markup-with-composer",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}
