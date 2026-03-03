@@ -30,6 +30,10 @@
 		"textColor": {
 			"type": "string",
 			"default": "#000000"
+		},
+		"buttonUrl": {
+			"type": "string",
+			"default": ""
 		}
 	},
 	"supports": {	},
